@@ -42,9 +42,20 @@ namespace QT1_CNPM
             dataGridView1.DataSource = tb;
         }
 
+        void executeSql(string sql)
+        {
+            SqlCommand query = new SqlCommand(sql, this.cn);
+            query.ExecuteNonQuery();
+        }
+
         private void btnAgentAdd_Click(object sender, EventArgs e)
         {
+            string name = iAgentName.Text;
+            string address = iAgentAddress.Text;
+            executeSql($"INSERT INTO Agent (AgentName, Address) VALUES ('{name}', '{address}')");
 
+            MessageBox.Show("Create successfully");
+            fillDataGrid("SELECT * FROM Agent");
         }
     }
 }
