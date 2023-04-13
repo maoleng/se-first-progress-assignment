@@ -84,6 +84,7 @@
             this.btnAll.TabIndex = 5;
             this.btnAll.Text = "All";
             this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // OrderForm
             // 

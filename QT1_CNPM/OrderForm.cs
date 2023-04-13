@@ -51,5 +51,10 @@ namespace QT1_CNPM
             SqlCommand query = new SqlCommand(sql, this.cn);
             query.ExecuteNonQuery();
         }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            fillDataGrid("SELECT * FROM \"Order\"");
+        }
     }
 }
