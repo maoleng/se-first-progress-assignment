@@ -59,5 +59,11 @@ namespace QT1_CNPM
             var form = new OrderForm();
             form.ShowDialog();
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            var form = new FilterForm();
+            form.ShowDialog();
+        }
     }
 }

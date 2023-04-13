@@ -31,6 +31,7 @@
             this.btnItem = new System.Windows.Forms.Button();
             this.buttonAgent = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
+            this.btnFilter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnItem
@@ -63,11 +64,22 @@
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
+            // btnFilter
+            // 
+            this.btnFilter.Location = new System.Drawing.Point(377, 209);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(144, 48);
+            this.btnFilter.TabIndex = 3;
+            this.btnFilter.Text = "Filter";
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.buttonAgent);
             this.Controls.Add(this.btnItem);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Button btnItem;
         private System.Windows.Forms.Button buttonAgent;
         private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnFilter;
     }
 }

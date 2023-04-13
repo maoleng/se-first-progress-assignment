@@ -28,3 +28,4 @@ E:\Code\se-first-progress-assignment\QT1_CNPM\obj\Debug\QT1_CNPM.csproj.Generate
 E:\Code\se-first-progress-assignment\QT1_CNPM\obj\Debug\QT1_CNPM.csproj.CoreCompileInputs.cache
 E:\Code\se-first-progress-assignment\QT1_CNPM\obj\Debug\QT1_CNPM.exe
 E:\Code\se-first-progress-assignment\QT1_CNPM\obj\Debug\QT1_CNPM.pdb
+E:\Code\se-first-progress-assignment\QT1_CNPM\obj\Debug\QT1_CNPM.FilterForm.resources
