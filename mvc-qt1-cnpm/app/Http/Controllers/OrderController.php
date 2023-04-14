@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Order;
+use Illuminate\Http\Request;
+
+class OrderController extends Controller
+{
+
+
+    public function index()
+    {
+        $orders = Order::query()->with('agent')->orderByDesc('OrderID')->paginate(10);
+
+        return view('order', [
+            'orders' => $orders,
+        ]);
+    }
+
+}
